@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <VideoView
+        android:id="@+id/videoViewTopLeft"
+        android:layout_width="650dp"
+        android:layout_height="400dp"
+        android:onClick="startVideo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNameTopLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="32dp"
+        android:minHeight="48dp"
+        android:onClick="runGreeting"
+        android:text="Name"
+        android:background="@color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/cardview_dark_background"
+        app:layout_constraintBottom_toBottomOf="@+id/videoViewTopLeft"
+        app:layout_constraintStart_toStartOf="@+id/videoViewTopLeft" />
+
+    <VideoView
+        android:id="@+id/videoViewTopRight"
+        android:layout_width="650dp"
+        android:layout_height="400dp"
+        android:onClick="startVideo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNameTopRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/videoViewTopRight"
+        app:layout_constraintStart_toStartOf="@+id/videoViewTopRight" />
+
+    <VideoView
+        android:id="@+id/videoViewBottomLeft"
+        android:layout_width="650dp"
+        android:layout_height="400dp"
+        android:onClick="startVideo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNameBottomLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/videoViewBottomLeft"
+        app:layout_constraintStart_toStartOf="@+id/videoViewBottomLeft" />
+
+
+    <VideoView
+        android:id="@+id/videoViewBottomRight"
+        android:layout_width="650dp"
+        android:layout_height="400dp"
+        android:onClick="startVideo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNameBottomRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="16dp"
+        android:text="Name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/videoViewBottomRight"
+        app:layout_constraintStart_toStartOf="@+id/videoViewBottomRight" />
+
+    <ImageView
+        android:id="@+id/heartTopLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:onClick="runComfort"
+        app:layout_constraintBottom_toBottomOf="@+id/txtNameTopLeft"
+        app:layout_constraintStart_toEndOf="@+id/txtNameTopLeft"
+        app:layout_constraintTop_toTopOf="@+id/txtNameTopLeft"
+        app:srcCompat="@drawable/love"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/heartBottomLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="21dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtNameBottomLeft"
+        app:layout_constraintStart_toEndOf="@+id/txtNameBottomLeft"
+        app:layout_constraintTop_toTopOf="@+id/txtNameBottomLeft"
+        app:srcCompat="@drawable/love" />
+
+    <ImageView
+        android:id="@+id/heartBottomRight"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtNameBottomRight"
+        app:layout_constraintStart_toEndOf="@+id/txtNameBottomRight"
+        app:layout_constraintTop_toTopOf="@+id/txtNameBottomRight"
+        app:srcCompat="@drawable/love" />
+
+    <ImageView
+        android:id="@+id/heartTopRight"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtNameTopRight"
+        app:layout_constraintStart_toEndOf="@+id/txtNameTopRight"
+        app:layout_constraintTop_toTopOf="@+id/txtNameTopRight"
+        app:srcCompat="@drawable/love" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
